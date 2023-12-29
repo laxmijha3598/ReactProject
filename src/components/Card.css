@@ -1,0 +1,51 @@
+/* Card.css */
+
+.card {
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+  }
+  
+  .card:hover {
+    background-color: #f0f0f0; 
+  }
+  
+  .card .view-product-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: none; 
+  }
+  
+  .card:hover .view-product-btn {
+    display: inline-block; 
+  }
+  
+  .card.clicked {
+    background-color: #3498db; 
+    color: #fff; 
+  }
+  
+  .card.clicked .view-product-btn {
+    display: inline-block; 
+  }
+
+  .wishlist-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+  }
+
+  .heart-icon {
+    color: #ccc; /* Default color for the heart icon */
+    transition: color 0.3s;
+  }
+
+  .heart-icon.active {
+    color: red; /* Color when the item is in the wishlist */
+  }
+  
